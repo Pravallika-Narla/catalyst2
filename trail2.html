@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        ::before,
+*      ::after {
+           margin: 0;
+    padding: 0;
+}
+        .body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.7em;
+           font-family: Verdana, Arial, Helvetica, sans-serif !important;
+           font-size: 12px !important;
+            
+        }
+        .container{
+            background-image: url("images/tm-catalyst-bg.jpg");
+            /* height: 160vh; */
+            width: 100%;
+            display: flex;
+            background-size: cover;
+           
+        }
+        .container1{
+            display:flex;
+            flex-direction: column;
+            background-color: rgba(0,0,0,0.7);
+            height: 150vh;
+            width:43vw;
+            margin-left: 85px;
+            margin-top: 55px;
+            row-gap: 200px;
+            
+           
+        }
+        .container1 .c1{
+            color: white;
+            padding: 100px;
+            text-align: center;
+            font-weight: 200px;
+            margin-top: 20px;
+
+        }
+        .container1 .c2{
+            margin: 40px;
+            font-weight: 20px;
+            font-size: small;
+             color: rgba(255,255,255,0.8);
+        }
+        button{
+            margin-left: 400px;
+            border: 1px solid ;
+            border-color: none;
+            background-color: rgba(219, 10, 91,1);
+            color: white;
+            width:100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            
+        }
+        .container2{
+            display:flex;
+            background-color:rgba(255,255,255,0.9);
+            height: 150vh;
+            width:43vw;
+            margin-top: 55px;
+            margin-right: 80px;
+            flex-direction: column; 
+            row-gap: 130px; 
+            column-gap: 0px;
+           
+        }
+        .container2 .c3{
+            color: skyblue;
+            font-weight: 100;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+       }
+      
+       
+    .c4{
+            display: flex;
+            column-gap: 5px;
+
+        }
+        .child1{
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+        }
+        .child2{
+            display: flex;
+            flex-direction: column;
+            row-gap: 9px;
+        }
+         .img1{
+            height: 180px;
+        width: 180px;
+        padding-right:5px ;
+        padding-bottom: 5px;
+        margin-left:24px;
+        border-right: 2px solid rgba(0,0,0,0.5);
+        border-bottom: 2px solid rgba(0,0,0,0.5);
+        border-width: 10px;
+       }
+       .img3{
+        
+        height: 180px;
+        width: 180px;
+         padding-left: 5px;
+         padding-bottom: 5px;
+        margin-bottom: 38px;
+        margin-left:24px;
+        border-left: 2px solid rgba(219, 10, 91,1);
+        border-bottom: 2px solid rgba(219, 10, 91,1);
+        border-width: 10px;
+    }
+     .img2{
+        
+        height: 180px;
+        width: 180px;
+        padding-top:5px ;
+        padding-right: 5px;
+        margin-top: 20px;
+        margin-left:5px;
+        border-top: 2px solid  rgba(219, 10, 91,1);
+        border-right: 2px solid  rgba(219, 10, 91,1);
+        border-width: 10px;
+       }
+       
+       .img4{
+        
+        height: 180px;
+        width: 180px;
+        padding-top:5px ;
+        padding-left: 5px;
+        margin-bottom: 38px;
+        margin-left:5px;
+        border-left: 2px solid rgba(0,0,0,0.5);
+        border-top: 2px solid rgba(0,0,0,0.5);
+        border-width: 10px;
+    }
+        .downcontainer1{
+            display:flex;
+            flex-direction: column;
+            background-color: rgba(0,0,0,0.7);
+            height: 147vh;
+            width:43vw;
+            margin-left: 85px;
+           
+            
+        }
+        .parent2{
+            position: relative; 
+            top: -870px;
+        }
+        .pinkcard{
+            /* position: relative; */
+
+            height: 200px;
+            width:79vw;
+            background-color:rgba(219, 10, 91,1);
+            text-align: center;
+            padding: 5px;
+            margin-top: 40px;
+            margin-left: 120px;
+            margin-right: 120px;
+            color: white;
+        }
+        .whitecard{
+            /* position: absolute; */
+
+            height: 50vh;
+            width:78vw;
+            background-color: aliceblue;
+            color: rgba(0,0,0,0.7);
+            margin-top: 3px;
+            margin-left: 7px;
+            display: flex;
+            justify-content: space-evenly;
+            /* gap:40px; */
+            /* align-item: center; */
+        } 
+     
+        .icons{
+           margin-top: 30px;
+           justify-content: center;
+           /* height: 260px;
+           width: 250px;
+           border: 2px solid black; */
+
+        }
+        .icons p{
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 30px; 
+            text-align: left;
+           
+        }
+        .downcontainer1 .d2{
+            margin: 40px;
+            font-weight: 20px;
+            font-size: small;
+            color: rgba(255,255,255,0.8);
+            margin-top: 480px;
+      }
+       .downcontainer2{
+            display: flex;
+            flex-direction: column;
+            background-color:rgba(255,255,255,0.9);
+            height: 147vh;
+            width: 41.6vw;
+            margin-top: 0px;
+            row-gap: 450px; 
+            column-gap: 0px;
+       }
+       .downcontainer2 .d4{
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+       input{
+        width:95%;
+        padding: 10px;
+        border: 1px solid lightgray;
+        color: lightgray;
+       }
+       
+      #lastbutton{
+            border: 1px solid ;
+            border-color: none;
+            background-color: rgba(219, 10, 91,1);
+            width:100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-left: 350px;
+            color: white;
+      }
+      .containermain{
+        background-image: url("images/tm-catalyst-bg.jpg");
+            height: 160vh;
+            width: 100%;
+            display: flex;
+            background-size: cover;
+      }
+      @media screen and (max-width: 756px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 200vh;
+        width: 200vw;
+    }
+    
+    .containermain {
+        height: 200vh;
+        width: 200vw;
+    }
+
+    .container {
+        background-image: url("images/tm-catalyst-bg.jpg");
+        height:calc(90%);
+        display: flex;
+        background-size: cover;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 200vh;
+        width: 80vw;
+        margin-left: 85px;
+        margin-top: 55px;
+        row-gap: 120px;
+    }
+
+    .container1 .c1 {
+        color: white;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .container1 .c2 {
+        margin: 40px;
+        margin-top: 220px;
+        font-weight: 20px;
+        font-size: small;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .container2 {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.9);
+        height: 200vh;
+        width: 80vw;
+        margin-top: 55px;
+        margin-right: 80px;
+        flex-direction: column;
+        row-gap: 90px;
+    }
+
+    .c4 {
+        display: flex;
+    }
+
+    .child1, .child2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .img1{
+        height: auto;
+        width: calc(70% );
+        padding-right:5px ;
+        padding-bottom: 5px;
+        margin-left:24px;
+        border-right: 2px solid rgba(0,0,0,0.5);
+        border-bottom: 2px solid rgba(0,0,0,0.5);
+        border-width: 10px;
+       }
+       .img3{
+        height: auto;
+        width: calc(70%);
+        padding-left: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 38px;
+        margin-left:24px;
+        border-left: 2px solid rgba(219, 10, 91,1);
+        border-bottom: 2px solid rgba(219, 10, 91,1);
+        border-width: 10px;
+    }
+    .img2 {
+        height: auto;
+        width: calc(70% );
+        padding-top: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        border-top: 2px solid rgba(219, 10, 91, 1);
+        border-right: 2px solid rgba(219, 10, 91, 1);
+        border-width: 10px;
+    }
+
+    .img4 {
+        height: auto;
+        width: calc(70% );
+        padding-top: 5px;
+        padding-left: 5px;
+        margin-bottom: 38px;
+        margin-left: 5px;
+        border-left: 2px solid rgba(0, 0, 0, 0.5);
+        border-top: 2px solid rgba(0, 0, 0, 0.5);
+        border-width: 10px;
+    }
+
+    .parent2 {
+        margin-top: 0;
+        top: -850px;
+        
+    }
+
+    .pinkcard {
+        height: 200px;
+        width: 145vw;
+        background-color: rgba(219, 10, 91, 1);
+        text-align: center;
+        padding: 5px;
+        margin-left: 120px;
+        margin-right: 120px;
+        margin-top: 0%;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    .whitecard {
+        height:fit-content;
+        width: calc(90%);
+        background-color: aliceblue;
+        color: rgba(0, 0, 0, 0.7);
+        margin-top: 3px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .downcontainer1 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 200vh;
+        width: 80vw;
+        margin-left: 85px;
+        justify-content: space-between;
+
+
+
+    }
+
+    .downcontainer2 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        height: 200vh;
+        width: 80vw;
+        margin-top: 0px;
+        row-gap: 450px;
+        justify-content: space-between;
+
+
+
+    }
+
+    button {
+        margin-left: calc(70% - 20px);
+        border: none;
+        background-color: rgba(219, 10, 91, 1);
+        color: white;
+        width: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .containermain {
+        background-image: url("images/tm-catalyst-bg.jpg");
+        height: 100%;
+        display: flex;
+        background-size: cover;
+    }
+    .downcontainer1 .d2{
+            margin: 40px;
+            font-weight: 30px;
+            font-size:large;
+            color: rgba(255,255,255,0.8);
+            margin-top: 350px;
+      }
+
+
+    .whitecard {
+        height:fit-content;
+        width: calc(90%);
+        background-color: aliceblue;
+        color: rgba(0, 0, 0, 0.7);
+        margin-top: 3px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    #lastbutton{
+            border: 1px solid ;
+            border-color: none;
+            background-color: rgba(219, 10, 91,1);
+            width:100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-left: calc(70% - 20px);
+            color: white;
+}
+      }
+      
+
+       
+    </style>   
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="c1">
+                <img src="/images/cat icon black.png" alt="" height="40px" width="40px">
+                <h1>CATALYST</h1>
+            </div>
+            <div class="c2">
+                <h4 style="text-align: center; color: rgba(255,255,255,0.8); font-size: 20px;">.02 Mauris Viverra</h4>
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: lighter;">Morbi vestibulum convallis dui, In tristique neque malesuada eleifend. Sed tempus, quam vitae lobortis vulputate, sapien nisi ultricies metus, in eleifend ipsum mauris eget magna.</p>
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: lighter;">In dapibus blandit congue. Sed quam nulla, pellentesque eget metus eu, sollicitudin sodales nisl. Integer tempus id lectus quis cursus.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="c3">
+                <h1 style="text-align: center;">.01 Welcome</h1>
+                <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet atque voluptates quia quasi praesentium veritatis numquam suscipit odit delectus saepe esse, ut ab autem labore velit soluta animi iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi et impedit repudiandae rem, animi quo, libero eius aliquam, aut laboriosam optio minima a repellat deserunt excepturi asperiores accusamus eaque?</p>
+                
+            </div>
+            <div class="c4">
+            <div class="child1">
+                <img src="images/tm-img-1.jpg" alt="keep exploring"  class="img1">
+                <img src="images/tm-img-3.jpg" alt="A white coin"  class="img3">
+            </div>
+            <div class="child2">
+                <img src="images/tm-img-2.jpg" alt="bird"  class="img2">
+                <img src="images/tm-img-4.jpg" alt="building"  class="img4">
+            </div>
+        </div>
+        </div>
+    </div>
+   
+    
+    <div class="containermain">
+        <div class="downcontainer1">
+            <div></div>
+           
+       
+            <div class="d2">
+                <h3>04 Contact Info</h3>
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: lighter;">In dapibus blandit congue. Sed quam nulla, pellentesque eget metus eu, sollicitudin sodales nisl. Integer tempus id lectus quis cursus.</p>
+                <address style="font-style: normal; font-weight: 100;">
+                    Tel: 010-020-0120 <br>
+                    Fax: 060-070-0670  <br>
+                    Email: info@company.com <br>
+                </address>
+
+            </div>
+        </div>
+        <div class="downcontainer2">
+            <div></div>
+            <div class="d4">
+                <form action="">
+                    
+                    <input class="name" type="text" name="user" placeholder="Your Name"><br><br>
+                    <input class="mail" type="text" name="user" placeholder="Email"><br><br>
+                    <input class="Message" type="text" name="user" placeholder="Message" style="padding-bottom: 130px;"><br><br>
+
+                </form>
+                
+                 <button id="lastbutton">Submit</button>
+            </div>
+        </div>
+    <!-- <footer style="text-align: center;">
+            Copyright &copy; 2017 Company | Design: templatemo
+    </footer>  -->
+       
+        
+    </div>
+    
+        
+    <div class="parent2">
+        <div class="pinkcard">
+            <h3>.03 Morbi Vehicula Suscipit</h3>
+            <div class="whitecard">
+
+                    <div class="icons">
+                        <img src="/images/icon1.png" alt="" height="50px" width="50px">
+                            <p>Curabitur ornare pulvinar sapien,accumsan malesuada mauris ultricies non. Sed id tempor arcu. Pellentesque tortor sapien, molestie at purus vitae, blandit pretium dolor.</p>
+                            
+                        
+                    </div>
+                    <div class="icons">
+                        <img src="/images/angular braces.png" alt="" height="50px" width="50px">
+                        
+                        <p>Curabitur ornare pulvinar sapien,accumsan malesuada mauris ultricies non. Sed id tempor arcu. Pellentesque tortor sapien, molestie at purus vitae, blandit pretium dolor.</p>
+                        
+                    </div>
+                    <div class="icons">
+                        <img src="/images/icon1.png" alt="" height="50px" width="50px">
+                        
+                        <p>Curabitur ornare pulvinar sapien,accumsan malesuada mauris ultricies non. Sed id tempor arcu. Pellentesque tortor sapien, molestie at purus vitae, blandit pretium dolor.</p>
+                        
+                    </div>
+               
+
+            </div>
+
+        </div>
+       
+    </div>
+     
+    
+</body>
+</html>
